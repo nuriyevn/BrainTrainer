@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         numberOfQuestions = 0;
         timerTextView.setText("30s");
 
+        generateQuestion();
+
         new CountDownTimer(30100, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
