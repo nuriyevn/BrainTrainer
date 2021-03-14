@@ -10,8 +10,7 @@
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#FFFFFF">
+        android:layout_marginTop="100dp">
 
         <Button
             android:id="@+id/button0"
@@ -21,9 +20,10 @@
             android:onClick="chooseAnswer"
             android:tag="0"
             android:text="18"
-            android:textSize="80sp"
-            app:backgroundTint="@color/black"
 
+            android:textSize="80sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
@@ -34,32 +34,37 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#7FE31A"
+            android:background="@color/teal_200"
+
             android:onClick="chooseAnswer"
             android:tag="1"
             android:text="18"
             android:textSize="80sp"
+
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_row="0"
-
             app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#2196F3"
+            android:background="#F32133"
             android:onClick="chooseAnswer"
             android:tag="2"
             android:text="18"
             android:textSize="80sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
             app:layout_column="0"
             app:layout_columnWeight="1"
+
             app:layout_gravity="fill"
             app:layout_row="1"
-
             app:layout_rowWeight="1" />
 
         <Button
@@ -71,11 +76,13 @@
             android:tag="3"
             android:text="18"
             android:textSize="80sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply"
             app:layout_column="1"
             app:layout_columnWeight="1"
+
             app:layout_gravity="fill"
             app:layout_row="1"
-
             app:layout_rowWeight="1" />
     </androidx.gridlayout.widget.GridLayout>
 
@@ -154,9 +161,12 @@
         android:layout_alignTop="@id/resultTextView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
+        android:background="#CDDC39"
         android:onClick="playAgain"
         android:text="PLAY AGAIN"
-        android:visibility="invisible" />
+        android:visibility="visible"
+        app:backgroundTint="#FFFFFF"
+        app:backgroundTintMode="multiply" />
 
 
 </RelativeLayout>
